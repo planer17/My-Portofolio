@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="David Nikolau — developer, game creator and digital storyteller."
+  >
+
+  <title>David Nikolau // Enter The Universe</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+
+<body>
+
+  <!-- ========================================
+       BOOT SCREEN
+  ========================================= -->
+
+  <div
+    class="boot-screen"
+    id="bootScreen"
+  >
+
+    <div class="boot-box">
+
+      <div class="boot-logo">
+        DN<span>//</span>
+      </div>
+
+      <p class="boot-title">
+        INITIALIZING DAVID.UNIVERSE
+      </p>
+
+      <div class="boot-lines">
+
+        <p id="bootLine1">
+          > loading creativity...
+        </p>
+
+        <p id="bootLine2">
+          > connecting projects...
+        </p>
+
+        <p id="bootLine3">
+          > gravity engine ready...
+        </p>
+
+      </div>
+
+
+      <div class="boot-bar">
+
+        <div
+          class="boot-progress"
+          id="bootProgress"
+        ></div>
+
+      </div>
+
+
+      <div class="boot-bottom">
+
+        <span>
+          SYSTEM
+        </span>
+
+        <strong id="bootPercent">
+          0%
+        </strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ========================================
+       GLOBAL EFFECTS
+  ========================================= -->
+
+  <canvas id="spaceCanvas"></canvas>
+
+
+  <div
+    class="cursor-dot"
+    id="cursorDot"
+  ></div>
+
+
+  <div
+    class="cursor-ring"
+    id="cursorRing"
+  ></div>
+
+
+  <div class="scanlines"></div>
+
+
+  <div
+    class="cursor-light"
+    id="cursorLight"
+  ></div>
+
+
+  <div
+    class="scroll-progress"
+    id="scrollProgress"
+  ></div>
+
+
+
+  <!-- ========================================
+       HEADER
+  ========================================= -->
+
+  <header
+    class="header"
+    id="header"
+  >
+
+    <a
+      href="#home"
+      class="logo magnetic"
+    >
+
+      <span class="logo-d">
+        D
+      </span>
+
+      <span class="logo-n">
+        N
+      </span>
+
+      <b>
+        //
+      </b>
+
+    </a>
+
+
+    <nav
+      class="nav"
+      id="nav"
+    >
+
+      <a href="#about">
+        <span>01</span>
+        ABOUT
+      </a>
+
+      <a href="#skills">
+        <span>02</span>
+        SKILLS
+      </a>
+
+      <a href="#projects">
+        <span>03</span>
+        PROJECTS
+      </a>
+
+    </nav>
+
+
+    <a
+      href="#projects"
+      class="header-launch magnetic"
+    >
+
+      LAUNCH PROJECTS
+
+      <span>
+        ↗
+      </span>
+
+    </a>
+
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Open menu"
+    >
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </header>
+
+
+
+  <main>
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="hero-grid"></div>
+
+
+      <div class="hero-copy">
+
+        <div class="hero-kicker reveal">
+
+          <span class="online-dot"></span>
+
+          <span>
+            SYSTEM ONLINE
+          </span>
+
+          <b>
+            // 2026
+          </b>
+
+        </div>
+
+
+        <div class="hero-name">
+
+          <h1
+            class="glitch-title reveal"
+            data-text="DAVID"
+          >
+            DAVID
+          </h1>
+
+
+          <h1
+            class="outline-title reveal"
+          >
+            NIKOLAU
+          </h1>
+
+        </div>
+
+
+        <div class="hero-role reveal">
+
+          <span>
+            CREATIVE
+          </span>
+
+          <strong>
+            DEVELOPER
+          </strong>
+
+          <i>
+            /
+          </i>
+
+          <span>
+            GAME
+          </span>
+
+          <strong>
+            CREATOR
+          </strong>
+
+        </div>
+
+
+        <p class="hero-text reveal">
+
+          I build
+
+          <strong>
+            games
+          </strong>,
+
+          <strong>
+            comics
+          </strong>
+
+          and strange digital worlds.
+
+          I want every project to feel like somewhere
+          you can enter — not just something you look at.
+
+        </p>
+
+
+        <div class="hero-buttons reveal">
+
+          <a
+            href="#projects"
+            class="main-cta magnetic"
+          >
+
+            <span>
+              ENTER MY WORLD
+            </span>
+
+            <b>
+              ↓
+            </b>
+
+          </a>
+
+
+          <a
+            href="https://github.com/planer17"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="secondary-cta magnetic"
+          >
+
+            GITHUB
+
+            <span>
+              ↗
+            </span>
+
+          </a>
+
+        </div>
+
+
+        <div class="hero-stats reveal">
+
+          <div>
+            <span>
+              PROJECTS
+            </span>
+
+            <strong>
+              02
+            </strong>
+          </div>
+
+
+          <div>
+            <span>
+              GAME
+            </span>
+
+            <strong>
+              01
+            </strong>
+          </div>
+
+
+          <div>
+            <span>
+              COMIC
+            </span>
+
+            <strong>
+              01
+            </strong>
+          </div>
+
+
+          <div>
+            <span>
+              STATUS
+            </span>
+
+            <strong class="status-live">
+              LIVE
+            </strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- HERO PORTAL -->
+
+      <div
+        class="hero-portal reveal"
+        id="heroPortal"
+      >
+
+        <div class="portal-halo"></div>
+
+        <div class="portal-ring portal-ring-1"></div>
+
+        <div class="portal-ring portal-ring-2"></div>
+
+        <div class="portal-ring portal-ring-3"></div>
+
+        <div class="portal-ring portal-ring-4"></div>
+
+
+        <div class="portal-label label-html">
+          HTML
+        </div>
+
+        <div class="portal-label label-css">
+          CSS
+        </div>
+
+        <div class="portal-label label-js">
+          JS
+        </div>
+
+        <div class="portal-label label-game">
+          GAME
+        </div>
+
+
+        <div class="portal-core">
+
+          <div class="portal-core-glow"></div>
+
+
+          <div class="code-window">
+
+            <div class="code-top">
+
+              <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <p>
+                david.exe
+              </p>
+
+            </div>
+
+
+            <div class="code-body">
+
+              <p>
+                <span class="code-purple">
+                  const
+                </span>
+
+                creator =
+              </p>
+
+
+              <p class="code-indent">
+
+                name:
+
+                <span class="code-green">
+                  "David Nikolau"
+                </span>,
+
+              </p>
+
+
+              <p class="code-indent">
+
+                mode:
+
+                <span class="code-blue">
+                  "CREATE"
+                </span>,
+
+              </p>
+
+
+              <p class="code-indent">
+
+                projects:
+
+                <span class="code-number">
+                  2
+                </span>,
+
+              </p>
+
+
+              <p class="code-indent">
+
+                boring:
+
+                <span class="code-red">
+                  false
+                </span>
+
+              </p>
+
+
+              <p>
+                };
+              </p>
+
+
+              <div class="code-status">
+
+                <span></span>
+
+                RUNNING
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="scroll-hint">
+        SCROLL TO EXPLORE
+        <span>↓</span>
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         MARQUEE
+    ========================================= -->
+
+    <section class="marquee">
+
+      <div class="marquee-track">
+
+        <span>GRAVITY FLIP</span>
+        <b>✦</b>
+
+        <span>GAME DEVELOPMENT</span>
+        <b>✦</b>
+
+        <span>THE LOST GRAVITY</span>
+        <b>✦</b>
+
+        <span>COMICS</span>
+        <b>✦</b>
+
+        <span>CREATIVE CODING</span>
+        <b>✦</b>
+
+        <span>GRAVITY FLIP</span>
+        <b>✦</b>
+
+        <span>GAME DEVELOPMENT</span>
+        <b>✦</b>
+
+        <span>THE LOST GRAVITY</span>
+        <b>✦</b>
+
+        <span>COMICS</span>
+        <b>✦</b>
+
+        <span>CREATIVE CODING</span>
+        <b>✦</b>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         ABOUT
+    ========================================= -->
+
+    <section
+      class="section about"
+      id="about"
+    >
+
+      <div class="section-marker reveal">
+
+        <span>
+          01
+        </span>
+
+        <p>
+          ABOUT DAVID
+        </p>
+
+        <div></div>
+
+      </div>
+
+
+      <div class="about-layout">
+
+        <div>
+
+          <p class="mini-title reveal">
+            CREATOR PROFILE
+          </p>
+
+
+          <h2 class="giant-heading reveal">
+
+            I MAKE
+
+            <span>
+              THINGS
+            </span>
+
+            THAT FEEL
+
+            <strong>
+              ALIVE.
+            </strong>
+
+          </h2>
+
+        </div>
+
+
+        <div class="about-right reveal">
+
+          <div class="profile-card">
+
+            <div class="profile-top">
+
+              <div class="profile-symbol">
+                DN
+              </div>
+
+              <div>
+
+                <small>
+                  CREATOR ID
+                </small>
+
+                <h3>
+                  DAVID NIKOLAU
+                </h3>
+
+              </div>
+
+            </div>
+
+
+            <div class="profile-line"></div>
+
+
+            <p>
+
+              I like programming, game design,
+              web development, visual storytelling
+              and building weird ideas.
+
+            </p>
+
+
+            <p>
+
+              I don't want my projects to feel like
+              homework.
+
+              I want them to feel like
+
+              <strong>
+                worlds.
+              </strong>
+
+            </p>
+
+
+            <div class="profile-tags">
+
+              <span>
+                CODE
+              </span>
+
+              <span>
+                GAMES
+              </span>
+
+              <span>
+                COMICS
+              </span>
+
+              <span>
+                IDEAS
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="quote-box">
+
+            <span>
+              //
+            </span>
+
+            <p>
+
+              "If the idea is weird enough,
+              it's probably worth building."
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         SKILLS
+    ========================================= -->
+
+    <section
+      class="section skills"
+      id="skills"
+    >
+
+      <div class="section-marker reveal">
+
+        <span>
+          02
+        </span>
+
+        <p>
+          CREATOR SYSTEM
+        </p>
+
+        <div></div>
+
+      </div>
+
+
+      <div class="skills-heading reveal">
+
+        <p class="mini-title">
+          ABILITIES
+        </p>
+
+        <h2>
+
+          MY
+
+          <span>
+            TOOLKIT.
+          </span>
+
+        </h2>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+
+        <article
+          class="skill-card reveal tilt"
+          data-accent="purple"
+        >
+
+          <div class="skill-corner">
+            01
+          </div>
+
+
+          <div class="skill-icon">
+            &lt;/&gt;
+          </div>
+
+
+          <h3>
+            WEB
+            <span>DEVELOPMENT</span>
+          </h3>
+
+
+          <p>
+
+            Interactive websites with motion,
+            responsive layouts and custom UI.
+
+          </p>
+
+
+          <div class="skill-tech">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+
+          </div>
+
+
+          <div class="skill-glow"></div>
+
+        </article>
+
+
+
+        <article
+          class="skill-card reveal tilt"
+          data-accent="cyan"
+        >
+
+          <div class="skill-corner">
+            02
+          </div>
+
+
+          <div class="skill-icon">
+            ◈
+          </div>
+
+
+          <h3>
+            GAME
+            <span>DEVELOPMENT</span>
+          </h3>
+
+
+          <p>
+
+            Mechanics, progression systems,
+            challenges and playable browser games.
+
+          </p>
+
+
+          <div class="skill-tech">
+
+            <span>LOGIC</span>
+            <span>GAMEPLAY</span>
+            <span>PHYSICS</span>
+
+          </div>
+
+
+          <div class="skill-glow"></div>
+
+        </article>
+
+
+
+        <article
+          class="skill-card reveal tilt"
+          data-accent="blue"
+        >
+
+          <div class="skill-corner">
+            03
+          </div>
+
+
+          <div class="skill-icon">
+            ✦
+          </div>
+
+
+          <h3>
+            DIGITAL
+            <span>STORYTELLING</span>
+          </h3>
+
+
+          <p>
+
+            Characters, stories, comic worlds
+            and cinematic digital presentation.
+
+          </p>
+
+
+          <div class="skill-tech">
+
+            <span>COMICS</span>
+            <span>ART</span>
+            <span>STORY</span>
+
+          </div>
+
+
+          <div class="skill-glow"></div>
+
+        </article>
+
+
+
+        <article
+          class="skill-card reveal tilt"
+          data-accent="pink"
+        >
+
+          <div class="skill-corner">
+            04
+          </div>
+
+
+          <div class="skill-icon">
+            ◎
+          </div>
+
+
+          <h3>
+            CREATIVE
+            <span>CODING</span>
+          </h3>
+
+
+          <p>
+
+            Effects, interactions, animations
+            and things that don't need to be normal.
+
+          </p>
+
+
+          <div class="skill-tech">
+
+            <span>MOTION</span>
+            <span>FX</span>
+            <span>EXPERIMENTS</span>
+
+          </div>
+
+
+          <div class="skill-glow"></div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         PROJECTS
+    ========================================= -->
+
+    <section
+      class="section projects"
+      id="projects"
+    >
+
+      <div class="section-marker reveal">
+
+        <span>
+          03
+        </span>
+
+        <p>
+          PROJECT ARCHIVE
+        </p>
+
+        <div></div>
+
+      </div>
+
+
+      <div class="projects-intro reveal">
+
+        <div>
+
+          <p class="mini-title">
+            SELECT A WORLD
+          </p>
+
+          <h2>
+
+            ENTER MY
+
+            <span>
+              PROJECTS.
+            </span>
+
+          </h2>
+
+        </div>
+
+
+        <p>
+
+          Click a project to launch it.
+
+          Both projects are live and hosted on GitHub Pages.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- =====================================
+           GRAVITY FLIP
+      ====================================== -->
+
+      <article
+        class="project project-gravity reveal"
+      >
+
+        <a
+          href="https://planer17.github.io/Gravity-Flip/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-screen gravity-screen tilt-project"
+        >
+
+          <div class="project-hover-light"></div>
+
+
+          <div class="project-topline">
+
+            <div>
+              PROJECT // 001
+            </div>
+
+            <div>
+              GAME
+            </div>
+
+          </div>
+
+
+          <div class="gravity-world">
+
+            <div class="gravity-grid"></div>
+
+            <div class="gravity-line gravity-line-top"></div>
+
+            <div class="gravity-line gravity-line-bottom"></div>
+
+
+            <div class="gravity-orbit orbit-big"></div>
+
+            <div class="gravity-orbit orbit-small"></div>
+
+
+            <div class="player-cube">
+
+              <span>
+                DN
+              </span>
+
+            </div>
+
+
+            <div class="game-spike spike-1"></div>
+
+            <div class="game-spike spike-2"></div>
+
+            <div class="game-spike spike-3"></div>
+
+            <div class="game-spike spike-4"></div>
+
+          </div>
+
+
+          <div class="project-center">
+
+            <small>
+              INTERACTIVE BROWSER GAME
+            </small>
+
+            <h3>
+              GRAVITY
+
+              <span>
+                FLIP
+              </span>
+            </h3>
+
+          </div>
+
+
+          <div class="launch-orb">
+
+            <span>
+              PLAY
+            </span>
+
+            <b>
+              ↗
+            </b>
+
+          </div>
+
+
+          <div class="project-bottom-code">
+
+            <span>
+              HTML
+            </span>
+
+            <span>
+              CSS
+            </span>
+
+            <span>
+              JAVASCRIPT
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <div class="project-info">
+
+          <div>
+
+            <p class="project-category">
+              01 // GAME
+            </p>
+
+            <h3>
+              Gravity Flip
+            </h3>
+
+            <p>
+
+              A fast arcade browser game where
+              gravity is your main mechanic.
+
+              Flip between the floor and ceiling,
+              dodge obstacles, unlock modes,
+              collect sparks and survive.
+
+            </p>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://planer17.github.io/Gravity-Flip/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="launch-button magnetic"
+            >
+              PLAY GAME
+              <span>↗</span>
+            </a>
+
+
+            <a
+              href="https://github.com/planer17/Gravity-Flip"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-button magnetic"
+            >
+              SOURCE
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================
+           LOST GRAVITY
+      ====================================== -->
+
+      <article
+        class="project project-comic reveal"
+      >
+
+        <a
+          href="https://planer17.github.io/The-Lost-Gravity/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-screen comic-screen tilt-project"
+        >
+
+          <!-- YOUR REAL BANNER -->
+
+          <img
+            src="piktrures/puster.png"
+            alt="The Lost Gravity comic banner"
+            class="puster-image"
+          >
+
+
+          <div class="comic-darkness"></div>
+
+          <div class="comic-vignette"></div>
+
+          <div class="comic-light"></div>
+
+
+          <div class="project-topline">
+
+            <div>
+              PROJECT // 002
+            </div>
+
+            <div>
+              COMIC
+            </div>
+
+          </div>
+
+
+          <div class="comic-side-code">
+
+            <span>
+              ORIGINAL
+            </span>
+
+            <span>
+              DIGITAL
+            </span>
+
+            <span>
+              STORY
+            </span>
+
+          </div>
+
+
+          <div class="comic-project-title">
+
+            <small>
+              ENTER THE STORY
+            </small>
+
+            <h3>
+              THE LOST
+
+              <span>
+                GRAVITY
+              </span>
+            </h3>
+
+          </div>
+
+
+          <div class="comic-stamp">
+
+            <strong>
+              DN
+            </strong>
+
+            <span>
+              ORIGINAL
+            </span>
+
+          </div>
+
+
+          <div class="launch-orb blue-launch">
+
+            <span>
+              READ
+            </span>
+
+            <b>
+              ↗
+            </b>
+
+          </div>
+
+        </a>
+
+
+        <div class="project-info">
+
+          <div>
+
+            <p class="project-category comic-category">
+              02 // COMIC
+            </p>
+
+            <h3>
+              The Lost Gravity
+            </h3>
+
+            <p>
+
+              An original digital comic combining
+              characters, artwork, story and a
+              web-based reading experience.
+
+            </p>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://planer17.github.io/The-Lost-Gravity/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="launch-button comic-launch magnetic"
+            >
+              READ COMIC
+              <span>↗</span>
+            </a>
+
+
+            <a
+              href="https://github.com/planer17/The-Lost-Gravity"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-button magnetic"
+            >
+              SOURCE
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+
+    <!-- ========================================
+         FINAL SCREEN
+    ========================================= -->
+
+    <section class="end-screen">
+
+      <div class="end-grid"></div>
+
+
+      <div class="end-ring ring-a"></div>
+
+      <div class="end-ring ring-b"></div>
+
+
+      <p class="mini-title reveal">
+        END OF CURRENT BUILD
+      </p>
+
+
+      <h2 class="reveal">
+
+        MORE
+
+        <span>
+          WORLDS
+        </span>
+
+        ARE COMING.
+
+      </h2>
+
+
+      <p class="end-copy reveal">
+
+        This portfolio will keep growing
+        whenever I build something new.
+
+      </p>
+
+
+      <a
+        href="https://github.com/planer17"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="end-button magnetic reveal"
+      >
+
+        <span>
+          OPEN GITHUB
+        </span>
+
+        <b>
+          ↗
+        </b>
+
+      </a>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ========================================
+       FOOTER
+  ========================================= -->
+
+  <footer>
+
+    <div>
+
+      <strong>
+        DAVID NIKOLAU
+      </strong>
+
+      <span>
+        CREATIVE DEVELOPER
+      </span>
+
+    </div>
+
+
+    <p>
+      BUILT WITH CODE + CHAOS
+    </p>
+
+
+    <div class="footer-links">
+
+      <a
+        href="https://github.com/planer17"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GITHUB
+      </a>
+
+      <a href="#home">
+        TOP ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
